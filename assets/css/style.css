@@ -175,6 +175,9 @@ body {
     padding-right: 30px;
 }
 
+.green-break {
+    background-color: #01eda3;
+}
 
 /*=============Style css=========*/
 
@@ -418,7 +421,7 @@ body {
 
 .other {
     font-size: 15px;
-    color: #999fb3;
+    color: black;
     padding: 0 0 15px;
 
     /*    border-bottom: 1px solid #999fb3;*/
@@ -432,12 +435,11 @@ body {
 
 .single-about-img img {
     float: right;
-    max-width: 80%;
-    max-height: 300px;
-    height: 100;
+    width:320px; 
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
+/*
     -webkit-filter: grayscale(100%);
     -webkit-transition: .5s ease-in-out;
     -moz-filter: grayscale(100%);
@@ -445,6 +447,7 @@ body {
     -o-filter: grayscale(100%);
     -o-transition: .5s ease-in-out;
     filter: grayscale(100%);
+*/
 }
 
 /*
@@ -467,8 +470,68 @@ body {
     font-size: 20px;
 }
 
-.resumetxt{
+.resumetxt {
     color: #01eda3;
+}
+
+/*  background-image: linear-gradient(to bottom, #43e97a, #38f9d7);*/
+
+.butn {
+    background: #43e97a;
+    background-image: -webkit-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -moz-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -ms-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -o-linear-gradient(top, #01eda3, #01eda3);
+    background-image: linear-gradient(to bottom, #01eda3, #01eda3);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    box-shadow: 0px 7px 29px -10px #CCF0D3;
+    -webkit-box-shadow: 0px 7px 29px -10px #CCF0D3;
+    -moz-box-shadow: 0px 7px 29px -10px #CCF0D3;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition-duration: 0.2s;
+    top: 0;
+}
+
+.butn:hover {
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+    color: #ffffff;
+    box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -webkit-box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -moz-box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -webkit-transition-duration: 0.2s;
+}
+
+.butn:active {
+    position: relative;
+    top: 1px;
+}
+
+.boldabout{
+    font-weight: 700;
+}
+
+#initial {
+    float: right;
+}
+
+#onhover {
+  display: none;
+    float: right;
+}
+#surround:hover span[id="initial"] {
+  display: none;
+}
+#surround:hover span[id="onhover"] {
+  display: block;
 }
 
 /*.single-about-img */
@@ -570,11 +633,11 @@ body {
     width: 300px;
     height: 300px;
     text-align: center;
-/*
+    /*
     background-color: rgba(1, 237, 163, 0.9);
     color: rgba(1, 237, 163, 0.9);
 */
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     -webkit-transition: opacity 0.6s;
     -moz-transition: opacity 0.6s;
@@ -818,6 +881,84 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     transition: .5s;
 }
 
+.contactbutn {
+    background: #43e97a;
+    background-image: -webkit-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -moz-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -ms-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -o-linear-gradient(top, #01eda3, #01eda3);
+    background-image: linear-gradient(to bottom, #01eda3, #01eda3);
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    border-radius: 50px;
+    box-shadow: 0px 7px 29px -10px #CCF0D3;
+    -webkit-box-shadow: 0px 7px 29px -10px #CCF0D3;
+    -moz-box-shadow: 0px 7px 29px -10px #CCF0D3;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition-duration: 0.2s;
+    top: 0;
+}
+
+.contactbutn:hover {
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+    color: #ffffff;
+    box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -webkit-box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -moz-box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -webkit-transition-duration: 0.2s;
+}
+
+.contactbutn:active {
+    position: relative;
+    top: 1px;
+}
+
+.contactbutnsmall {
+    background: #43e97a;
+    background-image: -webkit-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -moz-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -ms-linear-gradient(top, #01eda3, #01eda3);
+    background-image: -o-linear-gradient(top, #01eda3, #01eda3);
+    background-image: linear-gradient(to bottom, #01eda3, #01eda3);
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    border-radius: 50px;
+    box-shadow: 0px 7px 29px -10px #CCF0D3;
+    -webkit-box-shadow: 0px 7px 29px -10px #CCF0D3;
+    -moz-box-shadow: 0px 7px 29px -10px #CCF0D3;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition-duration: 0.2s;
+    top: 0;
+}
+
+.contactbutnsmall:hover {
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+    color: #ffffff;
+    box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -webkit-box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -moz-box-shadow: 0px 26px 29px -10px #CCF0D3;
+    -webkit-transition-duration: 0.2s;
+}
+
+.contactbutnsmall:active {
+    position: relative;
+    top: 1px;
+}
+
 /*===============================
     Scroll Top
 ===============================*/
@@ -1052,7 +1193,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 @media screen and (max-width: 768px) {
     /* phones */
-    .single-about-img{
+    .single-about-img {
         display: none;
     }
 }
@@ -1061,4 +1202,3 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
      portrait phones 
 }*/
-
