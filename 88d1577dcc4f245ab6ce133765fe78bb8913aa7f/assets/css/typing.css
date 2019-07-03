@@ -1,0 +1,211 @@
+.css-typing p {
+    border-right: .15em solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 1px;
+    color: black;
+
+}
+
+
+/* If the screen size is 1201px wide or more*/
+
+@media screen and (min-width: 1201px) {
+    .css-typing p {
+        font-size: 26px;
+    }
+    .css-typing p:nth-child(1) {
+        width: 42.5em;
+    }
+    .css-typing p:nth-child(2) {
+        width: 17em;
+    }
+}
+
+
+
+/* If the screen size is 1200px wide or less*/
+
+@media screen and (max-width: 1200px) {
+    .css-typing p {
+        font-size: 19px;
+    }
+    .css-typing p:nth-child(1) {
+        width: 43.5em;
+    }
+    .css-typing p:nth-child(2) {
+        width: 17em;
+    }
+}
+
+
+
+/* If the screen size is 1000px wide or less*/
+
+@media screen and (max-width: 1000px) {
+    .css-typing p {
+        font-size: 16px;
+    }
+    .css-typing p:nth-child(1) {
+        width: 44.5em;
+    }
+    .css-typing p:nth-child(2) {
+        width: 17.5em;
+    }
+}
+
+
+
+/* If the screen size is 800px wide or less*/
+
+@media screen and (max-width: 800px) {
+    .css-typing p {
+        font-size: 13px;
+    }
+    .css-typing p:nth-child(1) {
+        width: 45.5em;
+    }
+    .css-typing p:nth-child(2) {
+        width: 18em;
+    }
+}
+
+
+
+/* If the screen size is 600px wide or less*/
+
+@media screen and (max-width: 600px) {
+    .typetxt{
+        display: none;
+    }
+    .css-typing p{
+        display: none;
+    }
+}
+
+
+.css-typing p:nth-child(1) {
+    -webkit-animation: type 2s steps(80, end);
+    animation: type 7s steps(80, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    opacity: 0;
+    -webkit-animation: type2 2s steps(80, end);
+    animation: type2 4s steps(38, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 7s;
+    /*delay*/
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    width: 44em;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(80, end);
+    animation: type2 6s steps(80, end);
+    /*type speed*/
+    -webkit-animation-delay: 2s;
+    animation-delay: 14s;
+    /*delay*/
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid black;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid black;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid black;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid black;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}

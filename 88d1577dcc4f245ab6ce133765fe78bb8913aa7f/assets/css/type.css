@@ -1,0 +1,21 @@
+.heading{
+  color: #0089FF;
+}
+h3,
+.typer,
+.type-once{
+  color: #F1569D;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+pre{
+  word-break: normal;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #F7F7F7;
+  border-radius: 3px;
+  font: 16px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 1.6;
+}
